@@ -1,0 +1,24 @@
+{
+  "mappings": {
+    "properties": {
+      "name": {
+        "type": "text"
+      },
+      "dateofbirth": {
+        "type": "date"
+      },
+      "region": {
+        "type": "keyword"
+      },
+      "region_name": {
+        "type": "keyword"
+      },
+      "country": {
+        "type": "keyword"
+      },
+      "geo_location": {
+        "type": "geo_shape"
+      }
+    }
+  }
+}
