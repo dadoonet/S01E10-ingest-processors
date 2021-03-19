@@ -161,7 +161,7 @@ echo "### Install Canvas Slides ###"
 echo "#############################"
 echo -ne '\n'
 
-# curl_post "$KIBANA_URL/api/saved_objects/_import?overwrite=true" "kibana-config/canvas.ndjson"
+curl_post_form "$KIBANA_URL/api/saved_objects/_import?overwrite=true" "kibana-config/canvas.ndjson"
 
 echo -ne '\n'
 echo "#####################"
@@ -169,7 +169,7 @@ echo "### Demo is ready ###"
 echo "#####################"
 echo -ne '\n'
 
-# open "$KIBANA_URL/app/canvas#/"
+open "$KIBANA_URL/app/canvas#/"
 
 echo "If not yet there, paste the following script in Dev Tools:"
 cat elasticsearch-config/devtools-script.json
